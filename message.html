@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Page</title>
+</head>
+<body>
+    <h1>Property Details</h1>
+    <div id="property-details"></div>
+    <button id="interested-btn">I am interested</button>
+    <button id="discuss-btn">I want to discuss about it</button>
+
+    <script>
+        const activePropertyId = JSON.parse(localStorage.getItem('activeProperty'));
+        const properties = JSON.parse(localStorage.getItem('rentProperties')) || [];
+        const rentedProperties = JSON.parse(localStorage.getItem('rentedProperties')) || [];
+
+        const propertyDetailsDiv = document.getElementById('property-details');
+
+        // Find active property
+        const property = properties.find(p => p.id === activePropertyId);
+
+        if (property) {
+            propertyDetailsDiv.innerHTML = `
+                <p>You are viewing: <strong>${property.name}</strong> (Owner: ${property.owner})</p>
+            `;
+        }
+
+        // Handle "I am interested" button
+        document.getElementById('interested-btn').addEventListener('click', () => {
+            if (!property) return;
+
+            // Mark property as rented
+            property.status = 'rented';
+            localStorage.setItem('rentProperties', JSON.stringify(properties));
+
+            // Add to user's rented list
+            rentedProperties.push(property);
+            localStorage.setItem('rentedProperties', JSON.stringify(rentedProperties));
+
+            alert('You have rented this property!');
+            window.location.href = 'rent.html'; // Redirect to Rent Page
+        });
+
+        // Handle "I want to discuss about it" button
+        document.getElementById('discuss-btn').addEventListener('click', () => {
+            alert('This feature is under development.');
+        });
+    </script>
+</body>
+</html>

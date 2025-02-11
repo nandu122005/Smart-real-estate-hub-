@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Page - PropertyHub</title>
+    <link rel="stylesheet" href="buy.css"> <!-- Ensure you link your styles -->
+</head>
+<body>
+    <header>
+        <h1>Properties for Sale</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="properties-container">
+            <p>Loading properties...</p>
+        </section>
+
+        <!-- Message Modal -->
+        <div id="message-modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Message the Seller</h2>
+                <p id="property-details"></p>
+                <textarea id="message-input" placeholder="Enter your message"></textarea>
+                <button id="send-message-btn">Send Message</button>
+                <button id="close-modal">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="buy.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - PropertyHub</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="about.js" defer></script>
+    <script src="server.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"></script>-->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+     
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" data-header>
+        <div class="container">
+            <!-- <a href="index.html" class="logo">
+                <img src="logo.png" width="190" height="28" alt="PropertyHub">
+            </a> -->
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="index.html" class="navbar-link label-medium">Home</a></li>
+                    <!-- <li><a href="rent.html" class="navbar-link label-medium">Rent</a></li>
+                    <li><a href="buy.html" class="navbar-link label-medium">Buy</a></li>
+                    <li><a href="sell.html" class="navbar-link label-medium">Sell</a></li>
+                     -->
+                    <li><a href="about.html" class="navbar-link label-medium active">About</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+                <span class="material-symbols-rounded open" aria-hidden="true"></span>
+                <span class="material-symbols-rounded close" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <h1>About PropertyHub</h1>
+                <p>
+                    PropertyHub is your one-stop solution for renting, buying, and selling properties. 
+                    Our platform connects buyers and sellers, helping them find trustworthy partners in 
+                    real estate transactions. Whether you're looking for a new home, renting out a property, 
+                    or listing one for sale, we've got you covered.
+                </p>
+                <p>
+                    We ensure all listings are verified, and our intuitive platform makes it easy to 
+                    navigate through properties based on your preferences.
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is PropertyHub?
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>PropertyHub is an online platform where users can buy, sell, or rent properties easily and securely.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I list my property on PropertyHub?
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            To list your property, navigate to the **Sell** page, fill in the required details about your property, and submit your listing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is PropertyHub free to use?
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes, PropertyHub is free to use for browsing properties. However, certain premium features may require payment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I contact the seller or landlord?
+                        <span class="material-symbols-rounded">expand_more</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            When viewing a property listing, you'll find the seller or landlord's contact details. Use them to reach out directly for negotiations or inquiries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 PropertyHub. All rights reserved.</p>
+            <ul class="social-links">
+                <div class="container">
+                    <p>Follow us on:</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.github.com" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    
+                    <p>Contact us: contact@propertyhub.com | +123 456 7890</p>
+                </div>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

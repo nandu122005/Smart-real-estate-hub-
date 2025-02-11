@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Rented Properties</title>
+</head>
+<body>
+    <h1>Your Rented Properties</h1>
+    <div id="rented-properties"></div>
+
+    <script>
+        const rentedPropertiesDiv = document.getElementById('rented-properties');
+        const rentedProperties = JSON.parse(localStorage.getItem('rentedProperties')) || [];
+
+        // Render user's rented properties
+        function renderRentedProperties() {
+            rentedPropertiesDiv.innerHTML = '';
+            rentedProperties.forEach(property => {
+                rentedPropertiesDiv.innerHTML += `
+                    <p><strong>${property.name}</strong> (Rented from: ${property.owner})</p>
+                `;
+            });
+        }
+
+        renderRentedProperties();
+    </script>
+</body>
+</html>

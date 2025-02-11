@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation</title>
+    <link rel="stylesheet" href="conversation.css">
+</head>
+<body>
+    <header>
+        <h1>Conversation</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="property-details">
+            <h2>Property Details</h2>
+            <div id="property-info">
+                <p><strong>Title:</strong> <span id="property-title">Loading...</span></p>
+                <p><strong>Type:</strong> <span id="property-type">Loading...</span></p>
+                <p><strong>Price:</strong> <span id="property-price">Loading...</span></p>
+                <p><strong>Location:</strong> <span id="property-location">Loading...</span></p>
+                <p><strong>Description:</strong> <span id="property-description">Loading...</span></p>
+            </div>
+        </section>
+
+        <section id="conversation-section">
+            <h2>Conversation</h2>
+            <div id="conversation-container">
+                <!-- Messages will appear here -->
+            </div>
+
+            <form id="message-form">
+                <textarea id="message-input" placeholder="Type your message here..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="user-details">
+            <h2>Other User Details</h2>
+            <div id="user-info">
+                <p><strong>Name:</strong> <span id="user-name">Loading...</span></p>
+                <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+                <p><strong>Contact:</strong> <span id="user-contact">Loading...</span></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="conversation.js"></script>
+</body>
+</html>

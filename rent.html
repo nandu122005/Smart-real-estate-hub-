@@ -1,0 +1,145 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Properties - PropertyHub</title>
+    <link rel="stylesheet" href="rent.css">
+</head>
+<body>
+    <header>
+        <h1>Properties for Rent</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="property-list">
+            <h2>Available Properties for Rent</h2>
+            <div id="properties-container">
+                <p>Loading properties...</p> <!-- Initially shows this while loading properties -->
+            </div>
+        </section>
+    </main>
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h3>Message Property Owner</h3>
+            <p id="property-details"></p>
+            <textarea id="message-input" placeholder="Write your message..."></textarea>
+            <button id="send-message-btn">Send Message</button>
+        </div>
+    </div>
+
+    <script src="rent.js"></script>
+</body>
+</html>  
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Properties</title>
+</head>
+<body>
+    <h1>Available Properties for Rent</h1>
+    <div id="rent-properties"></div>
+
+    <script>
+        // Example property data (stored in localStorage for demo purposes)
+        const rentProperties = [
+            { id: 1, name: "Apartment A", owner: "User1", type: "rent", status: "available" },
+            { id: 2, name: "Villa B", owner: "User2", type: "rent", status: "available" }
+        ];
+
+        // Save to localStorage (only for demo setup)
+        localStorage.setItem('rentProperties', JSON.stringify(rentProperties));
+
+        const rentPropertiesDiv = document.getElementById('rent-properties');
+
+        // Render available properties
+        function renderProperties() {
+            const properties = JSON.parse(localStorage.getItem('rentProperties')) || [];
+            rentPropertiesDiv.innerHTML = '';
+
+            properties
+                .filter(property => property.type === 'rent' && property.status === 'available')
+                .forEach(property => {
+                    const propertyDiv = document.createElement('div');
+                    propertyDiv.innerHTML = `
+                        <p><strong>${property.name}</strong> (Owner: ${property.owner})</p>
+                        <button onclick="startRentProcess(${property.id})">Message</button>
+                    `;
+                    rentPropertiesDiv.appendChild(propertyDiv);
+                });
+        }
+
+        // Start rental process
+        function startRentProcess(propertyId) {
+            localStorage.setItem('activeProperty', JSON.stringify(propertyId)); // Store selected property ID
+            window.location.href = 'message.html'; // Navigate to message page
+        }
+
+        renderProperties();
+    </script>
+</body>
+</html>
+ -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rent Properties</title>
+ </head>
+ <body>
+     <h1>Available Properties for Rent</h1>
+     <div id="rent-properties"></div>
+ 
+     <script>
+         // Example property data (stored in localStorage for demo purposes)
+         const properties = [
+             { id: 1, name: "Apartment A", owner: "User1", status: "available" },
+             { id: 2, name: "Villa B", owner: "User2", status: "available" }
+         ];
+ 
+         // Save to localStorage if not already stored
+         if (!localStorage.getItem('rentProperties')) {
+             localStorage.setItem('rentProperties', JSON.stringify(properties));
+         }
+ 
+         const rentPropertiesDiv = document.getElementById('rent-properties');
+ 
+         // Render available properties
+         function renderProperties() {
+             const properties = JSON.parse(localStorage.getItem('rentProperties')) || [];
+             rentPropertiesDiv.innerHTML = '';
+ 
+             properties
+                 .filter(property => property.status === 'available')
+                 .forEach(property => {
+                     const propertyDiv = document.createElement('div');
+                     propertyDiv.innerHTML = `
+                         <p><strong>${property.name}</strong> (Owner: ${property.owner})</p>
+                         <button onclick="viewProperty(${property.id})">View Details</button>
+                     `;
+                     rentPropertiesDiv.appendChild(propertyDiv);
+                 });
+         }
+ 
+         // Navigate to message page with selected property
+         function viewProperty(propertyId) {
+             localStorage.setItem('activeProperty', JSON.stringify(propertyId));
+             window.location.href = 'message.html'; // Navigate to message page
+         }
+ 
+         renderProperties();
+     </script>
+ </body>
+ </html>
+  -->

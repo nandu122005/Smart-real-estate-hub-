@@ -1,0 +1,13 @@
+{
+      "users": {
+        "user@example.com": {
+          "name": "John Doe",
+          "age": "30",
+          "profession": "Engineer",
+          "contact": "1234567890",
+          "address": "123 Street Name, City"
+        }
+      },
+      "loggedInUser": "user@example.com"
+    }
+    

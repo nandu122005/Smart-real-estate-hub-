@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .container {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
+  }
+  
+  /* Header and Navigation */
+  .header {
+      background-color: #333;
+      padding: 10px 0;
+      color: white;
+  }
+  
+  .logo {
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .navbar {
+      float: right;
+  }
+  
+  .navbar-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; /* Align items side by side */
+      gap: 20px; /* Space between links */
+  }
+  
+  .navbar-link {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 10px 15px;
+      transition: background-color 0.3s ease;
+  }
+  .navbar-link:hover {
+      background-color: #575757;
+      border-radius: 5px;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #f4f4f4;
+  }
+  
+  .welcome-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+  }
+  
+  /* Quotes Section */
+  .quotes-section {
+      text-align: center;
+      padding: 30px 0;
+  }
+  
+  .quotes-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+  }
+  
+  .quotes-section blockquote {
+      font-style: italic;
+      margin: 10px auto;
+      max-width: 600px;
+      color: #555;
+  }
+  
+  /* Property Gallery */
+  .property-gallery {
+      padding: 40px 0;
+      background-color: #f9f9f9;
+  }
+  
+  .gallery {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+  }
+  
+  .gallery-item {
+      text-align: center;
+  }
+  
+  .gallery-item img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-item p {
+      margin-top: 10px;
+      font-weight: bold;
+  }
+  
+  /* Footer */
+  /* Footer Styles */
+  .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+  }
+  
+  .social-links {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between icons */
+  }
+  
+  .social-link {
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-link:hover {
+      transform: scale(1.2); /* Slight zoom effect */
+      color: #f39c12; /* Highlight color on hover */
+  }
+  .chat-container {
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      max-width: 600px;
+      margin: 20px auto;
+  }
+  
+  .chat-messages {
+      max-height: 300px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+  .chat-form {
+      display: flex;
+      gap: 10px;
+  }
+  
+  .chat-form input {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+  .chat-form .send-btn {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .chat-form .send-btn:hover {
+      background-color: #0056b3;
+  }
+  .get-started-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.get-started-btn:hover {
+    background-color: #0056b3;
+}
+
+  
+  
+  
